@@ -47,7 +47,7 @@ class Search extends Component {
             method: 'POST',
             url: 'https://youtubesearchexpress.the3dit0r.repl.co/search',
             headers: { 'Content-Type': 'application/json' },
-            data: { search_term: this.state.searchTerm, token: 't3578y3wnv785y38w7tn7q37ft7mi57r1i896', all: true }
+            data: { search_term: this.state.searchTerm, token: process.env["SEARCH_TOKEN"], all: true }
         };
 
         axios.request(options).then((response) => {
