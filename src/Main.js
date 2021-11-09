@@ -9,7 +9,7 @@ import Search from "./components/Search";
 
 const socket = io("https://Squigg.blueg15.repl.co");
 
-const guild_id = "769373256917975080";
+const guild_id = process.env["GUILD_ID"];
 
 
 class Main extends Component {
@@ -19,7 +19,7 @@ class Main extends Component {
             currentPlaylist: [],
             is_playing: false,
             loop_mode: 0,
-            guild_id: "769373256917975080",
+            guild_id: "",
             oldRS: [],
             oldST: "",
         }
