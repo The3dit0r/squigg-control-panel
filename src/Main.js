@@ -9,7 +9,7 @@ import Search from "./components/Search";
 
 const socket = io("https://Squigg.blueg15.repl.co");
 
-const guild_id = process.env["GUILD_ID"];
+const guild_id = "769373256917975080";
 
 
 class Main extends Component {
